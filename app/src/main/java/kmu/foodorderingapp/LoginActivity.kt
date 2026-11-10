@@ -26,5 +26,9 @@ class LoginActivity : AppCompatActivity() {
         binding.loginButton.setOnClickListener {
             startActivity(Intent(this, HomeActivity::class.java))
         }
+
+        binding.dontHaveAccountText.setOnClickListener {
+            startActivity(Intent(this, SignupActivity::class.java))
+        }
     }
 }
